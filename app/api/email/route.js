@@ -26,8 +26,6 @@ export async function GET(request) {
 
 export async function DELETE(request) {
     const id = await request.nextUrl.searchParams.get('id');
-
-    const email = await EmailModel.findById(id);
     const response = await EmailModel.findByIdAndDelete(id);
 
     return NextResponse.json({success: true, msg: 'Blog Deleted'})
