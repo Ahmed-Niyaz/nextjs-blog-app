@@ -51,9 +51,18 @@ const SingleBlog = ({params}) => {
         </div>
         <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10'>
             <Image className='border-4  border-white' src={data.image} width={1280} height={720} alt='blog-img' />
-            <h1 className='my-8 text-[26px] font-semibold'>Introduction:</h1>
-            <p>{data.description}</p>
-            <h3 className='my-5 text-[18px] font-semibold'>Step 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero incidunt, ut illo temporibus facilis itaque! Unde repudiandae eius voluptatibus maxime totam? Consequatur distinctio et ad alias! Vel, consectetur ad.</h3>
+            
+            <div className='blog-content' dangerouslySetInnerHTML={{__html:data.description}}>
+
+            </div>
+
+            
+            {/* <h1 className='my-8 text-[26px] font-semibold'>Introduction:</h1> */}
+            {/* <p>{data.description}</p> */}
+
+
+
+            {/* <h3 className='my-5 text-[18px] font-semibold'>Step 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero incidunt, ut illo temporibus facilis itaque! Unde repudiandae eius voluptatibus maxime totam? Consequatur distinctio et ad alias! Vel, consectetur ad.</h3>
             <p className='my-3'>Before Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, molestias quod amet dolore fugiat quia aliquam, explicabo beatae reiciendis neque qui numquam.</p>
             <p className='my-3'>Before Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, molestias quod amet dolore fugiat quia aliquam, explicabo beatae reiciendis neque qui numquam.</p>
 
@@ -66,7 +75,7 @@ const SingleBlog = ({params}) => {
             <p className='my-3'>Before Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, molestias quod amet dolore fugiat quia aliquam, explicabo beatae reiciendis neque qui numquam.</p>
 
             <h3 className='my-5 text-[18px] font-semibold'>Conclusion</h3>
-            <p className='my-3'>Before Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, molestias quod amet dolore fugiat quia aliquam, explicabo beatae reiciendis neque qui numquam.</p>
+            <p className='my-3'>Before Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, molestias quod amet dolore fugiat quia aliquam, explicabo beatae reiciendis neque qui numquam.</p> */}
             <div className='my-24'>
                 <p className='text-black font font-semibold my-4'>Share this article</p>
                 <div className='flex'>
