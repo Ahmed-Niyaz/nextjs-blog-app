@@ -39,9 +39,11 @@ const SingleBlog = ({params}) => {
                 <Link href='/'>
                 <Image src={assets.blog} width={50} height={50} alt='logo' className='' />
                 </Link>
+                <Link href={`/admin/addProduct`}>
                 <button className='flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-black hover:shadow-[7px_7px_0px_#000000]'>
                     Add New Blog <Image src={assets.arrow} alt='arrow' />
                 </button>
+                </Link>
             </div>   
             <div className='text-center my-24'>
                 <h1 className='text-2xl sm:text-5xl font-semibold max-w-[700px] mx-auto'>{data.title}</h1>
