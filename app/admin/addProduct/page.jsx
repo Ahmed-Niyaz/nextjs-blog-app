@@ -5,7 +5,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
-const addProductPage = () => {
+const AddProductPage = () => {
   const [image, setImage] = useState(false);
   const [data, setData] = useState({
     title: "",
@@ -148,4 +148,4 @@ const addProductPage = () => {
   );
 };
 
-export default addProductPage;
+export default AddProductPage;
