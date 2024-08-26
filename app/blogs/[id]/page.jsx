@@ -29,7 +29,7 @@ const SingleBlog = ({params}) => {
 
         // setData(blog);
         
-    }, [])
+    },)
 
   return (
     data ? 

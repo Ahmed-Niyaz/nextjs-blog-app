@@ -5,7 +5,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
 
-const page = () => {
+const AddBlogPage = () => {
 
     const [blogs, setBlogs] = useState([]);
 
@@ -131,4 +131,4 @@ const page = () => {
   )
 }
 
-export default page
+export default AddBlogPage
