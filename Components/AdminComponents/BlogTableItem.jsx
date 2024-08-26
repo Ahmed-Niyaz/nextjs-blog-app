@@ -12,7 +12,6 @@ const BlogTableItem = ({_id : id, authorImg, author, title, date, index, deleteB
             <p>{index}</p>
             <Image width={40} height={40} src={authorImg ? authorImg : assets.profile_icon} alt='profile' />
             <p>{author ? author : 'No author name'}</p>
-            <p>{id}</p>
         </th>
         <td className='px-6 py-4'>
             {title ? title : 'no title'}

@@ -16,7 +16,6 @@ export default function Layout ({children}) {
                     <Image src={assets.profile_icon} width={40} alt='img' />
                 </div>
                 {children}
-
             </div>
         </div>
     </>

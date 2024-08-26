@@ -21,13 +21,13 @@ const BlogList = () => {
 
   return (
     <div>
-        <div className='flex justify-center gap-6 my-10'>
+        <div className='flex justify-center gap-6 my-10 rounded-md'>
             <button className={`${categories === 'All' ? 'bg-black text-white' : null}  py-1 px-4 rounded-sm`} onClick={() => setCategory('All')}>All</button>
             <button className={`${categories === 'Technology' ? 'bg-black text-white py-1 px-4 rounded-sm' : null} `} onClick={() => setCategory('Technology')}>Technology</button>
             <button className={`${categories === 'Startup' ? 'bg-black text-white py-1 px-4 rounded-sm' : null} `} onClick={() => setCategory('Startup')}>Startup</button>
             <button className={`${categories === 'Lifestyle' ? 'bg-black text-white py-1 px-4 rounded-sm' : null} `} onClick={() => setCategory('Lifestyle')}>Lifestyle</button>
         </div>
-        <div className='flex flex-wrap justify-around gap-1 gap-y-10 mb-16 xl:mx-24'>
+        <div className='flex flex-wrap justify-around gap-4 gap-y-10 mb-16 xl:mx-24'>
             {blogs.map(blog => {
                 const {_id : id, title, image, description, category, date, author, author_img} = blog;
 

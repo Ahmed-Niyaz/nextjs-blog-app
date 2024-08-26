@@ -83,12 +83,13 @@ const page = () => {
         fetchBlogs();
     }
     
-    const deleteAll = async() => {
-    // not implemented yet
+    // const deleteAll = async() => {
+    // // not implemented yet
 
     // const response = await axios.delete('/api/blog');
-    return;
-    }
+    // toast.success('Deleted all blogs');
+    // return;
+    // }
 
     useEffect(() => {
         fetchBlogs();
@@ -123,8 +124,8 @@ const page = () => {
             </table>
         </div>
         <div className='mt-10 mb-10'>
-            <button onClick={addAll} className=" mt-10 p-4 bg-black text-white">Add all</button>
-            <button onClick={deleteAll} className=" mt-10 ml-10 p-4 bg-black text-white">Delete All</button>
+            <button onClick={addAll} className=" mt-10 p-4 bg-black text-white">Add all from already assets for demo</button>
+            {/* <button onClick={deleteAll} className=" mt-10 ml-10 p-4 bg-black text-white">Delete All</button> */}
         </div>
     </div>
   )
